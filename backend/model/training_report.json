@@ -1,0 +1,104 @@
+{
+  "version": "v1.0",
+  "trained_at": "2026-09-04T12:13:59.073278",
+  "n_training_samples": 2400,
+  "class_balance": {
+    "recoverable": 1465,
+    "not_recoverable": 935,
+    "recovery_rate_pct": 61.04
+  },
+  "cv_roc_auc": {
+    "mean": 0.9996,
+    "std": 0.0004,
+    "all_folds": [
+      1.0,
+      0.9991,
+      0.9996,
+      0.9992,
+      1.0
+    ]
+  },
+  "train_metrics": {
+    "roc_auc": 1.0,
+    "average_precision": 1.0,
+    "confusion_matrix": [
+      [
+        935,
+        0
+      ],
+      [
+        0,
+        1465
+      ]
+    ]
+  },
+  "classification_report": {
+    "0": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 935.0
+    },
+    "1": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1465.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2400.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2400.0
+    }
+  },
+  "top_10_features": [
+    {
+      "feature": "retry_hours_log",
+      "importance": 0.6267063844624037
+    },
+    {
+      "feature": "cat_temp_error",
+      "importance": 0.36488356334418753
+    },
+    {
+      "feature": "success_rate",
+      "importance": 0.0020858090769398097
+    },
+    {
+      "feature": "account_age_days",
+      "importance": 0.0016426847333287436
+    },
+    {
+      "feature": "avg_amount_log",
+      "importance": 0.0015055183491772773
+    },
+    {
+      "feature": "cat_auth_required",
+      "importance": 0.001208647958356952
+    },
+    {
+      "feature": "amount_vs_avg_ratio",
+      "importance": 0.0006172396242381578
+    },
+    {
+      "feature": "typical_payment_hour",
+      "importance": 0.0003511419068080779
+    },
+    {
+      "feature": "past_failure_count",
+      "importance": 0.00034454349299878627
+    },
+    {
+      "feature": "amount_log",
+      "importance": 0.0002892915282708024
+    }
+  ]
+}

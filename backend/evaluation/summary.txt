@@ -1,0 +1,27 @@
+=================================================================
+  AI-DRIVEN PAYMENT RECOVERY — EVALUATION RESULTS
+=================================================================
+  Test records      : 600
+  Recoverable       : 366 (61.0% of test set)
+
+  ┌─────────────────────┬──────────────┬──────────────┐
+  │ Metric              │ AI Policy    │ Baseline     │
+  ├─────────────────────┼──────────────┼──────────────┤
+  │ Recovery Rate       │      89.62% │      87.43% │
+  │ Txns Recovered      │          328 │          320 │
+  │ Revenue Recovered   │ $  32,558.70 │ $  30,253.80 │
+  └─────────────────────┴──────────────┴──────────────┘
+
+  ► Uplift            : +2.50% (2.19 pp)
+  ► Extra txns        : +8
+  ► Extra revenue     : +$2,304.90
+
+  Category Breakdown (recoverable records only):
+  Category                AI Rate  Base Rate   Uplift
+  ----------------------------------------------------
+  expired_card             100.0%       0.0%  +100.0%
+  insufficient_funds       100.0%     100.0%    +0.0%
+  temp_error                90.9%     100.0%    -9.1%
+  auth_required             53.5%     100.0%   -46.5%
+  unknown                   50.0%     100.0%   -50.0%
+=================================================================
